@@ -5,7 +5,7 @@
         {
             "name": "STlink debug",
             "cwd": "${workspaceRoot}",
-            "executable": "${workspaceRoot}/build/FlightController_STM32.elf",
+            "executable": "${workspaceRoot}/build/${workspaceFolderBasename}.elf",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "stutil",
@@ -16,7 +16,7 @@
         {
             "name": "STlink attach",
             "cwd": "${workspaceRoot}",
-            "executable": "${workspaceRoot}/build/FlightController_STM32.elf",
+            "executable": "${workspaceRoot}/build/${workspaceFolderBasename}.elf",
             "request": "attach",
             "type": "cortex-debug",
             "servertype": "stutil",

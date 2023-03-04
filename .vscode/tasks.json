@@ -4,21 +4,20 @@
             "type": "shell",
             "group": "build",
             "label": "Build all",
-            "command": "make",
-            "args": [
-                "all",
-                "-j4"
-            ]
+            "command": "make all -j4"
         },
         {
             "type": "shell",
             "group": "build",
             "label": "Build clean",
-            "command": "make",
-            "args": [
-                "clean"
-            ]
-        }
+            "command": "make clean"
+        },
+        {
+            "type": "shell",
+            "group": "build",
+            "label": "Load binary",
+            "command": "make all -j4 && st-flash write ${workspaceRoot}/build/${workspaceFolderBasename}.bin 0x08000000"
+        },
     ],
     "version": "2.0.0"
 }

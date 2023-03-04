@@ -1,4 +1,5 @@
 {
     "cortex-debug.gdbPath": "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gdb",
-    "cortex-debug.stutilPath": "/opt/homebrew/Cellar/stlink/1.7.0/bin/st-util"
+    "cortex-debug.stutilPath": "/opt/homebrew/Cellar/stlink/1.7.0/bin/st-util",
+    "cmake.configureOnOpen": false
 }
