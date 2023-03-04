@@ -87,6 +87,9 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+  SIM868_init_lib(&huart2, &Error_Handler);
+  SIM868_check_connection();
+  HAL_GPIO_TogglePin(GPIOD, GREEN_LED_Pin);
   /* USER CODE END 2 */
 
   /* Infinite loop */

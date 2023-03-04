@@ -12,6 +12,7 @@
             "device": "STM32F407VG",
             "interface": "swd",
             "preLaunchTask": "Build all",
+            "svdFile": "${workspaceRoot}/STM32F407.svd"
         },
         {
             "name": "STlink attach",
@@ -22,7 +23,8 @@
             "servertype": "stutil",
             "device": "STM32F407VG",
             "interface": "swd",
-            "preLaunchTask": "Build all"
+            "preLaunchTask": "Build all",
+            "svdFile": "${workspaceRoot}/STM32F407.svd"
         }
     ]
 }

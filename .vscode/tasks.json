@@ -16,7 +16,7 @@
             "type": "shell",
             "group": "build",
             "label": "Load binary",
-            "command": "make all -j4 && st-flash write ${workspaceRoot}/build/${workspaceFolderBasename}.bin 0x08000000"
+            "command": "make all -j4 && st-flash --reset write ${workspaceRoot}/build/${workspaceFolderBasename}.bin 0x08000000"
         },
     ],
     "version": "2.0.0"
