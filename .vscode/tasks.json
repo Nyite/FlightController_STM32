@@ -1,0 +1,24 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "group": "build",
+            "label": "Build all",
+            "command": "make",
+            "args": [
+                "all",
+                "-j4"
+            ]
+        },
+        {
+            "type": "shell",
+            "group": "build",
+            "label": "Build clean",
+            "command": "make",
+            "args": [
+                "clean"
+            ]
+        }
+    ],
+    "version": "2.0.0"
+}

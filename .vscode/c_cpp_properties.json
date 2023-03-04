@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/Drivers/CMSIS/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+                "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/include",
+                "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include",
+                "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/c++/12.2.1",
+                "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/machine",
+                "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/newlib-nano",
+                "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/sys",
+                "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include",
+                "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include-fixed"
+            ],
+            "defines": 
+            [
+                "USE_HAL_DRIVER",
+                "STM32F407xx"
+            ],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-arm64",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

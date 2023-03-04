@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "projectName": "FlightController_STM32",
+    "configurations": [
+        {
+            "name": "STlink debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/FlightController_STM32.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stutil",
+            "device": "STM32F407VG",
+            "interface": "swd",
+            "preLaunchTask": "Build all",
+        },
+        {
+            "name": "STlink attach",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/FlightController_STM32.elf",
+            "request": "attach",
+            "type": "cortex-debug",
+            "servertype": "stutil",
+            "device": "STM32F407VG",
+            "interface": "swd",
+            "preLaunchTask": "Build all"
+        }
+    ]
+}
